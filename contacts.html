@@ -4,33 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <title>Контакты</title>
 </head>
 <body class="page">
     <!-- Шапка сайта -->
     <header class="page-header">
-        <div class="container header-container">
+        <div class="header__container">
             <nav class="nav">
-                <a href="./index.html" class="logo logo__primary link">
+                <a href="./index.html" class="logo__primary">
                     <span class="logo__style">Web </span>Studio
                 </a>
-                <ul class="list site-nav">
+                <ul class="site-nav">
                     <li class="site-nav__item">
-                        <a href="./index.html" class="link site-nav__link">Студия</a>
+                        <a href="./index.html" class="site-nav__link">Студия</a>
                     </li>
                     <li class="site-nav__item">
-                        <a href="./portfolio.html" class="link site-nav__link">Портфолио</a>
+                        <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
                     </li>
                     <li class="site-nav__item">
-                        <a href="./contacts.html" aria-current="true" class="link site-nav__link site-nav__link--current">Контакты</a>
+                        <a href="./contacts.html" aria-current="true" class="site-nav__link site-nav__link--current">Контакты</a>
                     </li>
                 </ul>
             </nav>
-            <ul class="list contacts-nav">
+            <ul class="contacts-nav">
                 <li class="contacts-nav__item">
-                    <a href="mailto:info@devstudio.com" class="link contacts-nav__link" title="Отравить Email">
+                    <a href="mailto:info@devstudio.com" class="contacts-nav__link" title="Отравить Email">
                         <svg class="icon-envelope icon-contacts" width="17" height="12">
                             <use href="./images/sprite.svg#icon-envelope"></use>
                         </svg>
@@ -68,7 +67,7 @@
     </main>
     <!-- Связь с веб студией -->
     <footer class="page-footer">
-        <div class="container footer-container">
+        <div class="footer__container">
             <div class="footer__content">
                 <div class="footer__address">
                     <a href="#back-to-web" class="logo logo__secondary link" aria-current="true">
@@ -81,13 +80,13 @@
                     </address>
                 </div>
                 <div class="footer__socials">
-                    <b class="uptitle footer__signup-title">Присоединяйтесь</b>    
+                    <b class="footer__signup-title">Присоединяйтесь</b>    
                     <ul class="socials list">
                         <li class="socials__item">
                             <a href="https://www.instagram.com/" target="_blank" aria-label="Логотип Instagram" title="Подписывайтесь в Instagram" class="socials__link ftr-insta-icon">
                                 <svg class="icon-socials" width="44" height="44">
                                     <use href="./images/sprite.svg#icon-instagram-ftr">
-                                        <p class="visually-hidden">Подписывайтесь в Instagram</p>
+                                        <p class="hidden-label">Подписывайтесь в Instagram</p>
                                     </use>
                                 </svg>
                             </a>
@@ -96,7 +95,7 @@
                             <a href="https://twitter.com/" target="_blank" aria-label="Логотип Twitter" title="Подписывайтесь в Twitter" class="socials__link ftr-twit-icon">
                                 <svg class="icon-socials" width="44" height="44">
                                     <use href="./images/sprite.svg#icon-twitter-ftr">
-                                        <p class="visually-hidden">Подписывайтесь в Twitter</p>
+                                        <p class="hidden-label">Подписывайтесь в Twitter</p>
                                     </use>
                                 </svg>
                             </a>
@@ -105,7 +104,7 @@
                             <a href="https://www.facebook.com/" target="_blank" aria-label="Логотип Facebook" title="Подписывайтесь в Facebook" class="socials__link ftr-fb-icon">
                                 <svg class="icon-socials" width="44" height="44">
                                     <use href="./images/sprite.svg#icon-facebook-ftr">
-                                        <p class="visually-hidden">Подписывайтесь в Facebook</p>
+                                        <p class="hidden-label">Подписывайтесь в Facebook</p>
                                     </use>
                                 </svg>
                             </a>
@@ -114,7 +113,7 @@
                             <a href="https://www.linkedin.com/" target="_blank" aria-label="Логотип Linkedin" title="Подписывайтесь в Linkedin" class="socials__link ftr-link-icon">
                                 <svg class="icon-socials" width="44" height="44">
                                     <use href="./images/sprite.svg#icon-linkedin-ftr">
-                                        <p class="visually-hidden">Подписывайтесь в Linkedin</p>
+                                        <p class="hidden-label">Подписывайтесь в Linkedin</p>
                                     </use>
                                 </svg>
                             </a>
@@ -123,9 +122,9 @@
                 </div>
                 <div class="footer__subscription">
                     <label>
-                        <b class="uptitle footer__signup-title">Подпишитесь на рассылку</b>
+                        <b class="footer__signup-title">Подпишитесь на рассылку</b>
                         <input type="email" name="email" placeholder="E-mail" autocomplete="off" class="footer__email">
-                        <button type="submit" class="button button__primary">
+                        <button type="submit" class="button__primary">
                             Подписаться
                             <svg class="icon-plane" width="24" height="24">
                                 <use href="./images/sprite.svg#icon-plane"></use>

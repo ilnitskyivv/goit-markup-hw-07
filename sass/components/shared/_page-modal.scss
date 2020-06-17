@@ -134,13 +134,13 @@
     left: 16px;
     
     pointer-events: none;
-    transition: all $function-duration $function-timing;
+    transition: $function-duration $function-timing;
     
     .form__input:hover ~ &,
     .form__input:focus ~ &,
     .form__input:not(:placeholder-shown) ~ & {
-        --color5: $accent-color;
-        transition: all $function-duration $function-timing;
+        fill: $accent-color;
+        transition: $function-duration $function-timing;
     }
 }
 
@@ -152,13 +152,13 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     
-    transition: border-color $function-duration $function-timing;
+    transition: $function-duration $function-timing;
     
     &:hover,
     &:focus,
     &:not(:placeholder-shown) {
         border-color: $accent-color;
-        transition: border-color $function-duration $function-timing;
+        transition: $function-duration $function-timing;
     }
 }
     

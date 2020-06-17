@@ -47,11 +47,18 @@
     &:hover,
     &:focus {
         border-color:$accent-color;
-        --color4: $accent-color;
+        transition: $function-duration $function-timing;
+    }
+    &:hover .icon-clients,
+    &:focus .icon-clients{
+        border-color:$accent-color;
+        fill: $accent-color;
         transition: $function-duration $function-timing;
     }
 }
     
     .icon-clients {
-    display: inline-block;
+        display: inline-block;
+        fill: $clients-logos-bg;
+        transition: $function-duration $function-timing;
     }

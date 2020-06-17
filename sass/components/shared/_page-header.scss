@@ -106,7 +106,12 @@
     &:hover,
     &:focus {
         color: $accent-color;
-        --color6: $accent-color;
+        transition: $function-duration $function-timing;
+    }
+    &:hover .icon-contacts,
+    &:focus .icon-contacts {
+        color: $accent-color;
+        fill: $accent-color;
         transition: $function-duration $function-timing;
     }
 } 
@@ -115,6 +120,9 @@
     display: inline-block;
     vertical-align: middle;
     margin-right: 10px;
+
+    fill: $secondary-text-color;
+    transition: $function-duration $function-timing;
 }
 
 .icon-envelope {

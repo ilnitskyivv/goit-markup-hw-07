@@ -95,9 +95,20 @@
     &:hover,
     &:focus {
         background-color: $accent-color;
-        --color4: $primary-white-color;
         transition: $function-duration $function-timing;
     }
+    &:hover .icon-socials,
+    &:focus .icon-socials   {
+        border-radius: 50%;
+        background-color: $accent-color;
+        fill: $primary-white-color;
+        transition: fill $function-duration $function-timing background-color $function-duration $function-timing;
+    }
+}
+
+.icon-socials {
+    fill: $clients-logos-bg;
+    transition: fill $function-duration $function-timing;
 }
 
 .hidden-label {

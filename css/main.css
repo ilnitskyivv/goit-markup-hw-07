@@ -452,7 +452,14 @@ body {
 
 .contacts-nav__link:hover, .contacts-nav__link:focus {
   color: #2196F3;
-  --color6: $accent-color;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-nav__link:hover .icon-contacts,
+.contacts-nav__link:focus .icon-contacts {
+  color: #2196F3;
+  fill: #2196F3;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -461,6 +468,9 @@ body {
   display: inline-block;
   vertical-align: middle;
   margin-right: 10px;
+  fill: #757575;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-envelope {
@@ -687,16 +697,16 @@ body {
   top: 10px;
   left: 16px;
   pointer-events: none;
-  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__input:hover ~ .icon-input,
 .form__input:focus ~ .icon-input,
 .form__input:not(:placeholder-shown) ~ .icon-input {
-  --color5: $accent-color;
-  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #2196F3;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__input {
@@ -705,14 +715,14 @@ body {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__input:hover, .form__input:focus, .form__input:not(:placeholder-shown) {
   border-color: #2196F3;
-  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comment {
@@ -980,9 +990,23 @@ body {
 
 .socials__link:hover, .socials__link:focus {
   background-color: #2196F3;
-  --color4: $primary-white-color;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials__link:hover .icon-socials,
+.socials__link:focus .icon-socials {
+  border-radius: 50%;
+  background-color: #2196F3;
+  fill: #ffffff;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-socials {
+  fill: #AFB1B8;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients__list {
@@ -1025,13 +1049,23 @@ body {
 
 .clients__rectangle:hover, .clients__rectangle:focus {
   border-color: #2196F3;
-  --color4: $accent-color;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients__rectangle:hover .icon-clients,
+.clients__rectangle:focus .icon-clients {
+  border-color: #2196F3;
+  fill: #2196F3;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-clients {
   display: inline-block;
+  fill: #AFB1B8;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-footer {
@@ -1102,6 +1136,7 @@ body {
   height: 24px;
   margin-left: 10px;
   vertical-align: middle;
+  fill: #ffffff;
 }
 
 .footer__signup-title {

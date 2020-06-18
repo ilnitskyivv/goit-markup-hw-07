@@ -2,24 +2,8 @@
 
 .features__section {
     @extend %section;
-
-    position: relative;
-    
-    &::after {
-        position: absolute;
-        content: "";
-        display: block;
-        
-        bottom: 0;
-        left: 50%;
-        
-        width: 1170px;
-        height: 1px;
-        
-        transform: translateX(-50%);
-        background-color: #ECECEC;
-    }
 }
+
 .features__main-title {
     @extend %section-title, %visually-hidden;
 }

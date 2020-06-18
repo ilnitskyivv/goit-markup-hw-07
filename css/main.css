@@ -799,23 +799,6 @@ body {
   color: #2196F3;
 }
 
-.features__section {
-  position: relative;
-}
-
-.features__section::after {
-  position: absolute;
-  content: "";
-  display: block;
-  bottom: 0;
-  left: 50%;
-  width: 1170px;
-  height: 1px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background-color: #ECECEC;
-}
-
 .features__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -856,6 +839,10 @@ body {
   margin-bottom: 0;
   line-height: 1.71;
   color: #757575;
+}
+
+.work__section {
+  padding-top: 0;
 }
 
 .work__list {

@@ -107,6 +107,7 @@
 }
 
 .icon-socials {
+    display: block;
     fill: $clients-logos-bg;
     transition: fill $function-duration $function-timing;
 }
